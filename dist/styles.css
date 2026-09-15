@@ -25,3 +25,23 @@ footer{display:flex;align-items:center;justify-content:space-between;gap:32px;ba
 .survey-card{display:flex;align-items:center;gap:32px;margin-top:24px;background:#fff8e0}
 .survey-card>div{flex:1}.survey-card .button{flex-shrink:0}.survey-card .survey-note{font-size:14px;margin:12px 0 0}.entry-guide{font-size:14px;color:var(--muted);margin-top:18px}
 @media(max-width:767px){.survey-card{display:block}.header-label{display:block;font-size:12px}.brandbar{flex-wrap:wrap;gap:8px}.hero h1{font-size:clamp(26px,5.5vw,38px)}}
+
+/* Group hours inline with the group title; facilities panel redesign. */
+.group-head{display:flex;align-items:baseline;gap:16px;margin-bottom:24px}
+.group-name{margin-bottom:0}
+.group-hours{margin:0 0 0 auto;font-size:16px;color:var(--muted);white-space:nowrap}
+.survey-card p+p{margin-top:0}
+
+.facility-content{grid-template-columns:repeat(2,1fr);gap:16px;padding:8px 0 32px}
+.facility-content article{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+.facility-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);font-size:20px;line-height:1;margin-bottom:16px}
+.facility-content h3{font-size:18px;margin:0 0 8px;color:var(--deep)}
+.facility-content p{font-size:15px;line-height:1.65}
+article.cafe{display:flex;align-items:flex-start;gap:24px;background:var(--yellow-light);border-color:#f0dca8;padding:28px 32px}
+.cafe .facility-icon{flex-shrink:0;width:56px;height:56px;font-size:26px;margin-bottom:0;background:var(--yellow);border-color:#eec833}
+.cafe h3{font-size:22px;margin-bottom:10px}
+.cafe p{font-size:16px;color:#6b5a1f}
+.cafe strong{color:#4a3c0c}
+
+@media(max-width:767px){.facility-content{grid-template-columns:1fr}article.cafe{display:block;padding:24px}.cafe .facility-icon{margin-bottom:16px}}
+@media(max-width:399px){.group-head{gap:8px}.group-hours{font-size:14px}}
