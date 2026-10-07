@@ -1,4 +1,12 @@
 const el=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text)node.textContent=text;return node;};
+// 주소가 등록되기 전에는 링크를 비활성 상태로 표시합니다.
+document.querySelectorAll('[data-resource]').forEach(link=>{
+ const address=window.education.resources?.[link.dataset.resource]?.trim();
+ if(!address)return;
+ try{const url=new URL(address);if(url.protocol!=='https:')return;}catch{return;}
+ link.href=address;link.target='_blank';link.rel='noopener noreferrer';link.removeAttribute('aria-disabled');
+ link.parentElement.querySelector('.resource-status').hidden=true;
+});
 const nav=document.querySelector('.quick-nav');
 const menu=el('button','nav-toggle','교육안내 목차 ☰');
 menu.type='button';menu.setAttribute('aria-expanded','false');

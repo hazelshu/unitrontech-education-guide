@@ -1,5 +1,10 @@
 // 교육 회차별 데이터. 공통 화면과 분리하여 다음 교육에서 재사용합니다.
 window.education = {
+ // 교육자료와 교육용 Claude 계정정보 확인 링크.
+ resources: {
+  materials:'https://www.safarion.app/login',
+  account:'https://docs.google.com/spreadsheets/d/1y46UO8buCwGkOj48wA0cz9H_2oXk6quR5hmxGh_Pt9M/edit?usp=sharing'
+ },
  groups: [
   {name:'A',dates:[['1일차','2026-10-12','10월 12일','월요일'],['2일차','2026-10-21','10월 21일','수요일']]},
   {name:'B',dates:[['1일차','2026-10-14','10월 14일','수요일'],['2일차','2026-10-19','10월 19일','월요일']]}
