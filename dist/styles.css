@@ -56,5 +56,10 @@ article.cafe{display:flex;align-items:flex-start;gap:24px;background:var(--yello
 .resource-action .button{margin-top:0}
 .resource-link[aria-disabled="true"]{background:#ffffff99;color:var(--muted);border-color:#1c1c1e26;cursor:default}
 .resource-status{font-size:13px;color:var(--muted)}
+.resource-zoom{flex-direction:row;align-items:center;gap:32px;margin-top:24px;background:#eef1ff;border-color:#d6ddff}
+.zoom-copy{flex:1}.zoom-copy .resource-label{display:block;margin-bottom:12px}
+.zoom-copy p{color:var(--muted);margin:0}.zoom-copy strong{color:var(--deep)}
+.resource-zoom .resource-action{margin-top:0;flex-shrink:0}
+@media(max-width:767px){.resource-zoom{flex-direction:column;align-items:flex-start;gap:24px}.zoom-copy p br{display:none}}
 @media(max-width:767px){.resource-card{padding:28px}}
 @media(max-width:479px){.resource-card{padding:24px}.resource-action{gap:12px}}
