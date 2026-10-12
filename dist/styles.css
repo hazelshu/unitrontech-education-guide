@@ -37,10 +37,12 @@ footer{display:flex;align-items:center;justify-content:space-between;gap:32px;ba
 .facility-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);font-size:20px;line-height:1;margin-bottom:16px}
 .facility-content h3{font-size:18px;margin:0 0 8px;color:var(--deep)}
 .facility-content p{font-size:15px;line-height:1.65}
-.facility-content .temperature-note{grid-column:1/-1;display:flex;align-items:flex-start;gap:20px;background:var(--orange);border-color:#f1cda9}
+.top-notice{display:flex;align-items:flex-start;gap:20px;margin-top:24px;padding:24px 28px;background:var(--orange);border:1px solid #f1cda9;border-radius:20px}
+.top-notice h2{font-size:20px;margin:0 0 8px;line-height:1.4}
+.top-notice p{font-size:15px;line-height:1.65;margin:0;color:var(--muted)}
 .temperature-note .facility-icon{flex-shrink:0;margin-bottom:0}
 .temperature-note strong{color:var(--deep)}
-@media(max-width:479px){.facility-content .temperature-note{display:block}.temperature-note .facility-icon{margin-bottom:16px}}
+@media(max-width:479px){.top-notice{gap:12px;padding:20px;margin-top:20px}.top-notice h2{font-size:18px}.top-notice .facility-icon{width:36px;height:36px;font-size:18px}}
 article.cafe{display:flex;align-items:flex-start;gap:24px;background:var(--yellow-light);border-color:#f0dca8;padding:28px 32px}
 .cafe .facility-icon{flex-shrink:0;width:56px;height:56px;font-size:26px;margin-bottom:0;background:var(--yellow);border-color:#eec833}
 .cafe h3{font-size:22px;margin-bottom:10px}
