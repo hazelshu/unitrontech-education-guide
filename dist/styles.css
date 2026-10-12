@@ -37,6 +37,10 @@ footer{display:flex;align-items:center;justify-content:space-between;gap:32px;ba
 .facility-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);font-size:20px;line-height:1;margin-bottom:16px}
 .facility-content h3{font-size:18px;margin:0 0 8px;color:var(--deep)}
 .facility-content p{font-size:15px;line-height:1.65}
+.facility-content .temperature-note{grid-column:1/-1;display:flex;align-items:flex-start;gap:20px;background:var(--orange);border-color:#f1cda9}
+.temperature-note .facility-icon{flex-shrink:0;margin-bottom:0}
+.temperature-note strong{color:var(--deep)}
+@media(max-width:479px){.facility-content .temperature-note{display:block}.temperature-note .facility-icon{margin-bottom:16px}}
 article.cafe{display:flex;align-items:flex-start;gap:24px;background:var(--yellow-light);border-color:#f0dca8;padding:28px 32px}
 .cafe .facility-icon{flex-shrink:0;width:56px;height:56px;font-size:26px;margin-bottom:0;background:var(--yellow);border-color:#eec833}
 .cafe h3{font-size:22px;margin-bottom:10px}
